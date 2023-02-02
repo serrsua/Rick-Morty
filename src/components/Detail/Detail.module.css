@@ -1,0 +1,22 @@
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #FFB26B;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    flex-direction: row-reverse;
+}
+
+.data {
+    position: absolute;
+}
+
+#img {
+    border-radius: 50px;
+}
+
