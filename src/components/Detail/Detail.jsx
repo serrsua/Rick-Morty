@@ -34,10 +34,10 @@ const Detail = (props) => {
     <>
       <div className="container">
         <div className="data">
-          <h1>Nombre: {character.name}</h1>
-          <h2>Estado: {character.status}</h2>
-          <h2>Especie: {character.species}</h2>
-          <h2>Género: {character.gender}</h2>
+          <h1 className="h1">Nombre: {character.name}</h1>
+          <h2 className="h2">Estado: {character.status}</h2>
+          <h2 className="h2">Especie: {character.species}</h2>
+          <h2 className="h2">Género: {character.gender}</h2>
 
           {/* para preguntar si existe la propiedad "origin" podemos usar "?" */}
           <h2>Orígen: {character.origin?.name}</h2>

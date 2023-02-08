@@ -1,0 +1,38 @@
+.divFavorites {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.favContainer {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.containerCharData {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.img {
+    height: 100px;
+    border-radius: 15px;
+}
+
+.charData{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 300px;
+    margin-left: 5px;
+}
+.h2 {
+    color: #FE5301;
+    font-size: 22px;
+    padding: 0 2px;
+    margin: 0;
+}

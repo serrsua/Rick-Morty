@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function Card(props) {
   const [isFav, setIsFav] = useState(false);
 
-  const myFavorites = useSelector((state) => state.myFavorites);
+  const myFavorites = useSelector((state) => state.allCharacters);
 
   const dispatch = useDispatch();
 

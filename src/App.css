@@ -1,9 +1,10 @@
 .App {
-   text-align: center;
-   align-items: center;
-   background-image: url('./assets/fondo-R&M.png');
-   background-attachment: fixed;
-   padding: 25px;
-   background-repeat: round;
-   height: 100vh;
+  text-align: center;
+  align-items: center;
+  background-image: url("./assets/fondo-R&M.png");
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 25px;
+  background-repeat: round;
+  height: 100vh;
 }

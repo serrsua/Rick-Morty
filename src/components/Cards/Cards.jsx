@@ -16,7 +16,7 @@ export default function Cards({ characters, onClose }) {
             image={character.image}
             onClose={() =>
               onClose(character.id)
-            } /* ejecutamos onClose con cada id */
+            }
           />
         );
       })}
