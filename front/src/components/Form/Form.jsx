@@ -31,9 +31,9 @@ const Form = ({login}) => {
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <h1 className={styles.title}>Logueate para ingresar</h1>
-        <label className={styles.formLabel}>Username:</label>
+        <label className={styles.formLabel}>Usuario:</label>
         <input
-          placeholder="example@example.com"
+          placeholder="sergio@prueba.com"
           className={styles.formInput}
           type="text"
           name="username"
@@ -42,9 +42,9 @@ const Form = ({login}) => {
         />
         <span className={styles.danger}>{errors.username}</span>
 
-        <label className={styles.formLabel}>Password:</label>
+        <label className={styles.formLabel}>Contraseña:</label>
         <input
-          placeholder="example123"
+          placeholder="sergio1234"
           className={styles.formInput}
           type="password"
           name="password"

@@ -1,22 +1,38 @@
 .h1 {
-    color: white;
+    text-shadow: 4px 3px 12px white;
+    color: #2a0348;
 }
 
 .h2 {
-    color: #FFB26B;
+    text-shadow: 4px 3px 5px black;
+    color: #07bd58;
 }
 
 .container {
-    position: relative;
-    display: inline-block;
+    margin-top: 50px;
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    
 }
 
 .data {
-    position: absolute;
+    border-radius: 20px;
+    background-color: #ffffff61;
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-#img {
-    border-radius: 50px;
+.charImg {
+    border-radius: 20px;
+    margin: 10px;
+    height: 400px;
 }
+
+/* .bthButton{
+
+} */
 

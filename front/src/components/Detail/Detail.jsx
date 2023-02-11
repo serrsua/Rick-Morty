@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./Detail.module.css";
+import styles from "./Detail.module.css";
 
 const Detail = (props) => {
   const { detailId } = useParams();
   const [character, setCharacter] = useState({});
 
-  console.log(character);
-
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+    fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
       .then((response) => response.json())
       .then((char) => {
         if (char.name) {
@@ -32,22 +30,24 @@ const Detail = (props) => {
 
   return (
     <>
-      <div className="container">
-        <div className="data">
-          <h1 className="h1">Nombre: {character.name}</h1>
-          <h2 className="h2">Estado: {character.status}</h2>
-          <h2 className="h2">Especie: {character.species}</h2>
-          <h2 className="h2">Género: {character.gender}</h2>
+      <div className={styles.container}>
+        <div className={styles.data}>
+          <h1 className={styles.h1}>Nombre: {character.name}</h1>
+          <h2 className={styles.h2}>Estado: {character.status}</h2>
+          <h2 className={styles.h2}>Especie: {character.species}</h2>
+          <h2 className={styles.h2}>Género: {character.gender}</h2>
 
           {/* para preguntar si existe la propiedad "origin" podemos usar "?" */}
-          <h2>Orígen: {character.origin?.name}</h2>
+          <h2 className={styles.h2}>Orígen: {character.origin}</h2>
         </div>
 
-        <div className="img">
-          <img src={character.image} alt="imagen del personaje" />
+        <div className={styles.img}>
+          <img className={styles.charImg} src={character.image} alt="imagen del personaje" />
         </div>
-        <button onClick={handleClick}>Back to Home</button>
       </div>
+      <button className={styles.bthButton} onClick={handleClick}>
+        Back to Home
+      </button>
     </>
   );
 };

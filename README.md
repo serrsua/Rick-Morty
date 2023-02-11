@@ -5,9 +5,27 @@ Este proyecto se trata de realizar una web acerca del famoso dibujo animado Rick
 - Agregar el o los personajes que quieras a una categoría de Favoritos
 - Navegar entre direcciones como "Home", "Favoritos" y "Acerca de"
 
-## Sección "Acerca de"
+## 📝 Indicaciones para que funcione en tu PC
+El proyecto está dividido en Front y Back, es importante para que todo funcione correctamente que te posiciones en la carpeta "back", abras la terminal y ejecutes los comandos: 
+```
+npm install
+npm i nodemon
+```
+Luego en la misma terminal deberás ejecutar:
+```
+npm start
+```
+Así el Back quedará funcionando y a la espera del Front.
 
-En la sección Acerca de encontrarás una pequeña descripción tanto del sitio como de mí, el creador de esta web, como así también una foto mía para que me conozcas. 😎
+Luego, para que funcione el Front y te muestre la página en el navegador, deberás posicionarte en la carpeta "front", abrir una segunda terminal y ejecutar:
+
+```
+npm i
+npm start
+```
+✅Si todo salió bien, deberás estar viendo el Login
+
+⚠️Si no ves la página, repasa los puntos de arriba o contactame directamente por github y te ayudaré a solucionarlo
 
 ## El sitio te va a pedir loguearte en la pantalla principal
 
@@ -16,4 +34,10 @@ Aún no tengo terminada la parte del login, por cuestiones relacionadas a consig
 - Username: sergio@prueba.com
 - Password: sergio1234
 
-## Espero que te guste mi sitio, ¡saludos! 😃👍
+## Sección "Acerca de"
+
+En la sección Acerca de encontrarás una pequeña descripción tanto del sitio como de mí, el creador de esta web, como así también una foto mía para que me conozcas. 😎
+
+
+
+## Espero que te guste mi web de R&M, ¡saludos! 😃👍
