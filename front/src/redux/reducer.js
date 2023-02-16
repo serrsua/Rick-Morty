@@ -1,4 +1,4 @@
-//import store from "./store";
+import axios from "axios";
 import { ADD_FAVORITE, DELETE_FAVORITE, FILTER, ORDER } from "./actions";
 
 const initialState = {
@@ -11,12 +11,12 @@ export default function reducer(state = initialState, { type, payload }) {
     case ADD_FAVORITE:
       return {
         ...state,
-        myFavorites: [...state.myFavorites, payload], // payload = character
+        myFavorites: [...state.myFavorites, payload], 
         allCharacters: [...state.myFavorites, payload],
       };
     case DELETE_FAVORITE:
       const filtro = state.myFavorites.filter((char) => {
-        return char.id !== payload; // payload = id
+        return char.id !== payload;
       });
       return {
         ...state,

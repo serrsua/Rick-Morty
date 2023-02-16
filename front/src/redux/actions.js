@@ -1,9 +1,11 @@
+import axios from "axios";
 export const ADD_FAVORITE = "ADD_CHARACTER";
 export const DELETE_FAVORITE = "DELETE_CHARACTER";
 export const FILTER = "FILTER";
 export const ORDER = "ORDER";
 
 export const addFavorite = (char) => {
+  axios.post("http://localhost:3001/rickandmorty/fav", char)
   return {
     type: ADD_FAVORITE,
     payload: char,
@@ -11,6 +13,7 @@ export const addFavorite = (char) => {
 };
 
 export const deleteFavorite = (id) => {
+  axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
   return {
     type: DELETE_FAVORITE,
     payload: id,
