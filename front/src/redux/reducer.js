@@ -1,4 +1,3 @@
-import axios from "axios";
 import { ADD_FAVORITE, DELETE_FAVORITE, FILTER, ORDER } from "./actions";
 
 const initialState = {

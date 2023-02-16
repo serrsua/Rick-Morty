@@ -5,6 +5,7 @@ import Cards from "./components/Cards/Cards.jsx";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
 import Form from "./components/Form/Form.jsx";
+import axios from "axios";
 import { Favorites } from "./components/Favorites/Favorites";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -38,8 +39,8 @@ function App() {
   };
 
   const onSearch = (character) => {
-    fetch(`http://localhost:3001/onsearch/${character}`)
-      .then((response) => response.json())
+    axios(`http://localhost:3001/rickandmorty/onsearch/${character}`)
+      .then((response) => response.data)
       .then((data) => {
         if (data.name) {
           if (!characters.find(char => char.id === data.id)){
