@@ -6,10 +6,9 @@ Este proyecto se trata de realizar una web acerca del famoso dibujo animado Rick
 - Navegar entre direcciones como "Home", "Favoritos" y "Acerca de"
 
 ## 📝 Indicaciones para que funcione en tu PC
-El proyecto está dividido en Front y Back, es importante para que todo funcione correctamente que te posiciones en la carpeta "back", abras la terminal y ejecutes los comandos: 
+El proyecto está dividido en Front y Back, es importante para que todo funcione correctamente que te posiciones en la carpeta "back", abras la terminal y ejecutes el comando: 
 ```
 npm install
-npm i nodemon
 ```
 Luego en la misma terminal deberás ejecutar:
 ```
@@ -20,7 +19,7 @@ Así el Back quedará funcionando y a la espera del Front.
 Luego, para que funcione el Front y te muestre la página en el navegador, deberás posicionarte en la carpeta "front", abrir una segunda terminal y ejecutar:
 
 ```
-npm i
+npm install
 npm start
 ```
 ✅Si todo salió bien, deberás estar viendo el Login
